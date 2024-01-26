@@ -2,9 +2,9 @@ import React from 'react'
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Toaster } from "react-hot-toast";
-import Home from './pages/Home';
-import Success from './pages/Success';
-import NotFound from './pages/NotFound';
+import Home from './Pages/Home';
+import Success from './Pages/Success';
+import NotFound from './Pages/NotFound';
 
 const App = () => {
   return (
