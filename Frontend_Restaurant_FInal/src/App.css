@@ -15,13 +15,13 @@
 } */
 
 body {
-  font-family: 'Arial', sans-serif; /* A highly readable font */
-  color: #333; /* Dark grey text for better readability */
-  background-color: #fff; /* Light background */
-  font-weight: 500; /* Medium font weight */
-  font-size: 16px; /* Adequate font size */
-  -webkit-font-smoothing: antialiased; /* Improve text rendering in WebKit browsers */
-  text-rendering: optimizeLegibility; /* Improve text readability */
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  background-color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility; 
 }
 
 ::-webkit-scrollbar{
@@ -41,6 +41,10 @@ nav {
   align-items: center;
   border-bottom-right-radius: 7px;
   border-bottom-left-radius: 7px;
+  background-image: url('https://images.unsplash.com/photo-1530982011887-3cc11cc85693?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YmFubmVyJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D'); /* Update the path as per your project structure */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 nav::after {
   content: "";
@@ -56,6 +60,8 @@ nav .logo {
   display: flex;
   align-items: center;
   font-size: 2rem;
+  font-weight:25px;
+  padding-left: 60px;
 }
 nav .navLinks {
   flex: 2;
@@ -73,13 +79,20 @@ nav .navLinks .links a {
   text-decoration: none;
   color: #555;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 20px;
   letter-spacing: 1.4px;
+  transition: color 0.3s, transform 0.3s; /* Add transition for smooth effect */
 }
 nav .navLinks .links a:hover {
   color: #222;
-  transition: 0.3s;
+  transition: scale(1.1);
   cursor: pointer;
+  text-shadow: 0 0 12px #e0ffe0, 0 0 14px #e0ffe0, 0 0 16px #00ff00, 0 0 18px #00ff00; /* Brighter green glow on hover */
+}
+nav .navLinks .links a:focus {
+  outline: none;
+  color: #222;
+  transform: scale(1.1);
 }
 nav .menuBtn {
   padding: 8px 20px;
@@ -205,6 +218,7 @@ nav svg {
 .heroSection .container .banner .title {
   font-size: 8.5rem;
   font-weight: 200;
+  text-shadow: 0 0 8px #fff, 0 0 10px #fff, 0 0 12px #ff4da6, 0 0 14px #ff4da6; /* Glowing effect */
 }
 .heroSection .container .banner .textAndLogo {
   width: 50%;
@@ -229,6 +243,7 @@ nav svg {
 .heroSection .container .banner .imageBox img {
   width: 300px;
   height: 385px;
+  border-radius: 5rem;
 }
 .heroSection .container .banner:last-child .imageBox {
   text-align: end;
@@ -348,6 +363,10 @@ nav svg {
   justify-content: center;
   align-items: center;
   background-color: #f9fbf2;
+  background-image: url('https://images.unsplash.com/photo-1503480207415-fdddcc21d5fc?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGJhbm5lciUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D'); /* Update the path as per your project structure */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .about .container {
   max-width: 1500px;
@@ -358,10 +377,11 @@ nav svg {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
 }
 .about .container .banner img {
-  width: 100%;
+  width: 50%;
 }
 .heading {
   font-weight: 200;
@@ -551,6 +571,8 @@ nav svg {
 .menu .container .dishes_container {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .menu .container .dishes_container .card {
   width: 25%;
@@ -649,6 +671,8 @@ nav svg {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  align-items: center;
+  justify-content: center;
 }
 .team .container .team_container .card {
   width: 25%;
@@ -657,6 +681,7 @@ nav svg {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 .team .container .team_container .card img {
   width: 175px;

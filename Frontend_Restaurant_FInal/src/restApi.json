@@ -30,7 +30,7 @@
             {
                 "id": 2,
                 "image": "./dinner2.png",
-                "title": "CITRUS CURED SALMON",
+                "title": "CURED SALMON",
                 "category": "Dinner"
             },
             {
@@ -43,7 +43,7 @@
                 "id": 4,
                 "image": "./dinner3.png",
                 "title": "STUFFED STRAWBERRY",
-                "category": "Dinner"
+                "category": "Breakfast"
             },
             {
                 "id": 5,
@@ -88,12 +88,6 @@
                 "image": "./team_member_3.png",
                 "name": "JHON DOE",
                 "designation": "Fast Food Chef"
-            },
-            {
-                "id": 4,
-                "image": "./team_member_4.png",
-                "name": "ALEX COAL",
-                "designation": "Senior Chef"
             }
         ],
         "testimonials": [
